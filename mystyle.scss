@@ -10,6 +10,7 @@ body {
 
 .container-1 {
   display: flex;
+  margin: 30px;
   justify-content: center;
   gap: 10px;
   
@@ -29,7 +30,7 @@ body {
 }
 .container-2 {
   display: flex;
-
+  margin: 30px;
   justify-content: center;
   gap: 10px;
   @for $i from 1 through 4 {
