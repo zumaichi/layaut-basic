@@ -13,21 +13,19 @@ body {
   margin: 30px;
   justify-content: center;
   gap: 10px;
-  
-  @for  $i from 1 through 4 {
-   
+
+  @for $i from 1 through 4 {
     .box.lighten-#{$i} {
       background-color: lighten($primary-color, $i * 5%);
     }
-    
-     @for $i from 1 through 4 {
+
     .box.darken-#{$i} {
       background-color: darken($primary-color, $i * 5%);
-    color: $text-color;}
-    
-  }
+      color: $text-color;
+    }
   }
 }
+
 .container-2 {
   display: flex;
   margin: 30px;
@@ -37,14 +35,14 @@ body {
     .box.lighten-#{$i} {
       background-color: lighten($secundary-color, $i * 5%);
     }
-    
   }
-  @for $i from 1 through 4 {
-    .box.darken-#{$i} {
-      background-color: darken($secundary-color, $i * 5%);
-    color: $text-color;}
+
+  .box.darken-#{$i} {
+    background-color: darken($secundary-color, $i * 5%);
+    color: $text-color;
   }
 }
+
 .container-3 {
   display: flex;
 
@@ -55,12 +53,13 @@ body {
       background-color: lighten($three-color, $i * 5%);
     }
   }
-  @for $i from 1 through 4 {
-    .box.darken-#{$i} {
-      background-color: darken($three-color, $i * 5%);
-    color: $text-color;}
+
+  .box.darken-#{$i} {
+    background-color: darken($three-color, $i * 5%);
+    color: $text-color;
   }
 }
+
 .box.base-color-1 {
   background-color: $primary-color;
 }
